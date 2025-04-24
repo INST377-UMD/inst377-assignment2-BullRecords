@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="functions.js" defer></script>
+    <script
+      src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>WELCOME TO DA WEBSITE</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+      </ul>
+    </nav>
+
+    <div class="pageContent">
+      <div id="bigButtonBox">
+        <button
+          class="button-92"
+          onclick="(window.location.href = 'stocks.html')"
+        >
+          Stocks
+        </button>
+        <button
+          class="button-92"
+          onclick="(window.location.href = 'dogs.html')"
+        >
+          Dogs
+        </button>
+      </div>
+      <div id="quoteBox">
+        <h2 id="quote"></h2>
+        <h3 id="author"></h3>
+      </div>
+    </div>
+
+    <footer>
+      <div id="voiceBox">
+        <p>
+          Upon loading of the window, Voice Recognition will begin. After giving
+          your browser access to your microphone, you gain access to a couple
+          features. 1st, simply say "navigate to (desired page)" and you will
+          access it. 2nd, say "hello" and enjoy the response. 3rd, say "Change
+          the color to (color)" and the background will change to that color.
+          This feature can be turned off and on via the buttons to the right.
+          Give it a try!!
+        </p>
+        <div id="voiceButtons">
+          <button id="voiceOn" onclick="startVoiceControl()">Start</button>
+          <button id="voiceOff" onclick="endVoiceControl()">Stop</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
